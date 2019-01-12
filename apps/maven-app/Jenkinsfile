@@ -10,7 +10,7 @@ pipeline {
                     def ciJob = new baseMavenCIJob(this)
                     ciJob.subDir = 'apps/maven-app'
                     ciJob.setVersion = true
-                    cuJob.version = "1.0.0"
+                    ciJob.version = "1.0.0"
                     ciJob.run()
                 }
             }
